@@ -54,9 +54,11 @@ app.factory("signinWithGoogle", function() {
         firebase.auth().onAuthStateChanged(function(user) {
             var user = firebase.auth().currentUser;
             if (user) {
+
                 // signinPanel.style.display = 'none';
                 writeUserData(user.uid, user.displayName, user.email);
                 console.log(firebase.auth().currentUser.displayName);
+                console.log(firebase.auth().currentUser.email);
             } else {
                 signinPanel.style.display = '';
             }
