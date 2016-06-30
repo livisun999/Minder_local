@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="minder_home">
+<head>
+	<title>Minder Home</title>
+
+	<!-- AngularJS -->
+	<script src="./angular/angular.min.js"></script>
+
+	<!-- Firebase -->
+	<script src="firebase/firebase.js"></script>
+
+	<!-- AngularFire -->
+	<script src="./angularfire/dist/angularfire.min.js"></script>
+  <link href="public/css/bootstrap.css" type="text/css">
+</head>
+
+
+<body ng-controller="home">
+  <div id="sigin-panel">
+    <form class="form-horizontal">
+      <h1> Đăng nhập hệ thống</h1>
+      <div class="form-group">
+        <label for="mUsername" class="col-sm-2 control-label">Username</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="mUsername" placeholder="Username">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="mPassword3" placeholder="********">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default" ng-click="signinWithMinder()">Sign in</button>
+
+        </div>
+      </div>
+    </form>
+    <button ng-click="signinWithFacebook()">Signin With Facebook</button>
+    <button ng-click="signinWithGoogle()">Signin With Google</button>
+    <!--<button ng-click="signinWithMinder()">Signin With Minder Account</button>-->
+    <a href="public/view/Register.html"> Đăng kí tài khoản mới</a>
+  </div>
+  <div id="signed">{{user}}</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyADlBUrIcfA6B4PeXEAtO1Boriqg-s1k3Y",
+    authDomain: "minder-807f1.firebaseapp.com",
+    databaseURL: "https://minder-807f1.firebaseio.com",
+    storageBucket: "minder-807f1.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+ <script src="./js/header.js"></script>
+</html>

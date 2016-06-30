@@ -1,0 +1,28 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/bin/nodejs /usr/bin/firebase serve
+[debug] CLI Version:  3.0.3
+[debug] Platform:     linux
+[debug] Node Version: v6.2.2
+[debug] Time:         Wed Jun 29 2016 18:25:02 GMT+0700 (ICT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /home/hoangdev/Public/minder/src/bower_components
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/bin/nodejs /usr/bin/firebase serve
+[debug] CLI Version:  3.0.3
+[debug] Platform:     linux
+[debug] Node Version: v6.2.2
+[debug] Time:         Thu Jun 30 2016 09:38:08 GMT+0700 (ICT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /home/hoangdev/minder/src
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000
